@@ -11,7 +11,9 @@
 		<script type="text/javascript" src="./js/jscex-async-powerpack.min.js"></script>
 		<script type="text/javascript" src="./js/functions.js" charset="utf-8"></script>
 		<script type="text/javascript" src="./js/love.js" charset="utf-8"></script>
-	<script type="text/javascript">document.getElementById("music").volume = 0.7;</script>
+	<script type="text/javascript">document.addEventListener('touchstart', function() {
+        document.getElementById('audios').play()
+    })document.getElementById("music").volume = 0.7;</script>
 	    <style type="text/css">
 <!--
 .STYLE1 {color: #666666}
@@ -19,7 +21,7 @@
         </style>
 </head>
     <body>
-			<audio autoplay id="music">
+			<audio autoplay="autoplay" id="music">
 					<source src="Die Prinzen - Ich Schenk Dir Die Welt.mp3" type="audio/mp3" />
 			</audio>  
         <div id="main">
