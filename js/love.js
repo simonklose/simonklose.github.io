@@ -199,7 +199,7 @@
             var len = this.length / 2;
 
             ctx.save();
-            ctx.strokeStyle = 'rgb(35, 31, 32)';
+            ctx.strokeStyle = 'rgb(128, 128, 128)';
             ctx.lineWidth = this.height;
             ctx.lineCap = 'round';
             ctx.lineJoin = 'round';
@@ -457,8 +457,8 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = 'rgb(35, 31, 32)';
-            ctx.shadowColor = 'rgb(35, 31, 32)';
+        	ctx.fillStyle = 'rgb(128, 128, 128)';
+            ctx.shadowColor = 'rgb(128, 128, 128)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
         	ctx.arc(p.x, p.y, s.radius, 0, 2 * Math.PI);
@@ -471,7 +471,7 @@
     Bloom = function(tree, point, figure, color, alpha, angle, scale, place, speed) {
         this.tree = tree;
         this.point = point;
-        this.color = color || 'rgb(255,' + random(0, 255) + ',' + random(0, 255) + ')';
+        this.color = color || 'rgb(128, 128, 128)';
         this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
